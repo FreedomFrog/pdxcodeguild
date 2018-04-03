@@ -194,10 +194,14 @@ def play_players(lst_of_players, curr_deck):
 
 def play_dealer(lst_of_players, curr_deck):
     dealer_hand = reveal_player_cards(lst_of_players[-1])
+    print(dealer_hand)
     dealer_obj = lst_of_players[-1]
 
     while dealer_obj.hand_of_cards.hand_value <= 16:
         deal_single_card(lst_of_players[-1], curr_deck)
+        dealer_hand = lst_of_players[-1].hand_of_cards.play_cards
+        print('dealer hits')
+        print(dealer_hand)
         for a_card in dealer_obj.hand_of_cards.play_cards:
             if a_card.bk_value == 1 and dealer_obj.hand_of_cards.hand_value < 11:
                 a_card.bk_value += 10
