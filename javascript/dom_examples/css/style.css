@@ -1,0 +1,10 @@
+#container {
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#mainTitle {
+    width: 100%;
+    text-align: center;
+}
