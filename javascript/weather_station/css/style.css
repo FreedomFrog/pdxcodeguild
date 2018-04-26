@@ -1,0 +1,12 @@
+body {
+    background-image: url("http://openweathermap.org/img/w/10d.png");
+}
+
+#weather-station-container {
+
+
+    background-color: #e8e8e8;
+    text-align: center;
+    margin: 5vw 25vw 5vw 25vw;
+
+}

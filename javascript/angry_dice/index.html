@@ -5,10 +5,59 @@
     <title>Title</title>
     <meta name="viewport" context="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script
+            src="http://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
 </head>
 <body>
-<script src="js/main.js"></script>
-<script>
-</script>
+<div id="header">
+    <h1>Angry Dice</h1>
+</div>
+<div id="rules-container">
+    <div id="rules">
+        <p id="intro">A player needs two Angry Dice. Player rolls the dice, looking to complete
+            Stage 1, then Stage 2, then Stage 3.
+        </p>
+        <ol>
+            <li>STAGE 1</li>
+            <li>One die showing 1 pip, another showing 2 pips.</li>
+
+            <li>STAGE 2</li>
+            <li>One die showing the Angry face (which represents a 3), another showing 4 pips.</li>
+            <li>STAGE 3</li>
+            <li>One die showing 5 pips, another showing 6 pips.</li>
+        </ol>
+        <p>A player does not have to perfectly roll each Stage; if a die shows one face in a
+            set, that die is locked (left the same) and the player now rolls the other die
+            to complete the set.</p>
+    </div>
+</div>
+<div id="round-container">
+    <h2 id="round-num"></h2>
+</div>
+<div id="play-area">
+    <ul id="dice">
+        <li id="die-1"></li>
+        <li id="die-2"></li>
+        <li class="hold-button" id="hold-1"><label for="HOLD1-button">
+            <button id="HOLD1-button">HOLD</button>
+        </label></li>
+        <li class="hold-button" id="hold-2"><label for="HOLD2-button">
+            <button id="HOLD2-button">HOLD</button>
+        </label></li>
+    </ul>
+</div>
+<div id="play-options">
+    <ul>
+        <li id="roll"><label for="roll-button">
+            <button id="roll-button">ROLL</button>
+        </label></li>
+        <li id="play"><label for="play-button">
+            <button id="play-button">PLAY</button>
+        </label></li>
+    </ul>
+</div>
+<script src="js/main2.js"></script>
 </body>
 </html>
